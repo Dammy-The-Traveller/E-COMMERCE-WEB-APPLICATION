@@ -1,6 +1,6 @@
 # E-commerce Web Application
 
-This e-commerce platform offers a streamlined experience for both sellers and buyers. It allows users to register according to their needs—either as a seller or a buyer. Sellers can post ads for their products and services, while buyers can browse listings but cannot post ads.
+This e-commerce platform built with procedural php offers a streamlined experience for both sellers and buyers. It allows users to register according to their needs—either as a seller or a buyer. Sellers can post ads for their products and services, while buyers can browse listings but cannot post ads.
 
 ## Key Features
 
