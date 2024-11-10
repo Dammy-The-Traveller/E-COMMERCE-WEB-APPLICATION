@@ -8,7 +8,7 @@ This e-commerce platform built with procedural php offers a streamlined experien
 - **Ad Posting for Sellers:** Only sellers have permission to post ads, allowing them to showcase products or services effectively.
 - **Profile Management:** Both sellers and buyers can edit their profiles, including updating their name, profile picture, and password.
 - **Ad Management:** Sellers can edit their ads before they are approved, enabling updates with the latest information before ads go live.
-- **Forgot Password:** Users can recover account access through a secure "Forgot Password" feature.
+
 
 This platform is designed for ease of use, making it simple for sellers to manage their ads and for buyers to explore available listings.
 
