@@ -62,13 +62,12 @@ $connection = mysqli_connect('localhost','root','','id22297382_selldot',3306);
 
     
         
-
-          if ($logged_user_type=='admin') {
+   if ($logged_user_type=='admin') {
             $sql = "SELECT * FROM ad_table  WHERE status='active'";
-          } elseif ($logged_user_type=='') {
-            $sql = "SELECT * FROM ad_table";
+          } elseif ($logged_user_type=='user') {
+            $sql = "SELECT * FROM ad_table WHERE status='active' and user_id='$logged_user_id'" ;
           }else{
-            $sql = "SELECT * FROM ad_table WHERE user_id='$logged_user_id' and status='active'" ;
+            $sql = "SELECT * FROM ad_table WHERE status='active'" ;
           }
            //  $sql = "SELECT * FROM ad_table WHERE status='active'";
            $result = mysqli_query($connection, $sql);
