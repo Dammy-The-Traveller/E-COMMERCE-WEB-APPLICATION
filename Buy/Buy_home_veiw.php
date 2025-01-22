@@ -63,12 +63,14 @@ $connection = mysqli_connect('localhost','root','','id22297382_selldot',3306);
     
         
 
-          // if ($logged_user_type=='admin') {
-          //   $sql = "SELECT * FROM ad_table";
-          // } else {
-          //   $sql = "SELECT * FROM ad_table WHERE user_id='$logged_user_id'" ;
-          // }
-             $sql = "SELECT * FROM ad_table";
+     if ($logged_user_type=='admin') {
+            $sql = "SELECT * FROM ad_table";
+          } else if($logged_user_type=='user') {
+            $sql = "SELECT * FROM ad_table WHERE status='active'" ;
+          }else{
+            $sql = "SELECT * FROM ad_table WHERE status='active'";
+          }
+            
            $result = mysqli_query($connection, $sql);
             $n_row  = mysqli_num_rows($result);  
 
